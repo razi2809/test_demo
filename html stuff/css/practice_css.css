@@ -1,0 +1,36 @@
+.main-heading {
+  color: crimson;
+  font: 4em italic;
+  text-decoration: underline cyan dotted;
+}
+p {
+  color: blue;
+}
+.groceries {
+  font: italic;
+  color: rgb(141, 43, 206);
+}
+.groceries > :first-child {
+  color: rgb(0, 0, 0);
+}
+.groceries > :last-child {
+  color: rgb(153, 120, 120, 10);
+}
+.login {
+  float: left;
+  margin-right: 400px;
+  margin-left: 70px;
+  border: black 5px solid;
+  padding: 10px;
+  border-radius: 30px;
+}
+.login > :last-child {
+  color: blue;
+}
+table {
+  float: right;
+  margin: 0 70px 0 120px;
+}
+.names > :first-child {
+  color: blue;
+}
