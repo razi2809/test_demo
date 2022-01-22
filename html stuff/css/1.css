@@ -1,0 +1,41 @@
+.formreg {
+  position: relative;
+}
+.formreg > label {
+  color: aqua;
+  background-color: brown;
+  border: solid 4px blue;
+  margin: 25px;
+}
+.formreg > input {
+  margin: 25px;
+}
+form :last-child {
+  position: relative;
+
+  left: 25px;
+  color: aqua;
+  background-color: black;
+}
+.website {
+  border: none;
+  border: white;
+}
+
+.dogs td {
+  border: black solid 2px;
+  border-radius: 10px;
+  max-width: 150px;
+}
+.dogs th {
+  border: orchid dotted 2px;
+  text-decoration: underline red;
+  text-transform: capitalize;
+}
+.dogs caption {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.dogs img {
+  width: 200px;
+}

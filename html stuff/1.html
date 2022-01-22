@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <html lang="en"></html>
+    <meta charset="uft-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <link rel="stylesheet" type="text/css" href="css/1.css" />
+  </head>
+  <body>
+    <h1>The input autofocus attribute</h1>
+
+    <p title="autofocus">
+      The autofocus attribute specifies that the input field should
+      automatically get focus when the page loads.
+    </p>
+    <form action="firspage.html" target="_blank">
+      <div class="formreg">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" required /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="pass">password:</label><br />
+        <input type="password" id="pass" name="pass" autofocus /><br />
+        <label for="email">email:</label><br />
+        <input
+          type="email"
+          id="email1"
+          name="email1"
+          required
+          placeholder="sample@gmail.com"
+        /><br />
+        <label for="birthday">date of birth:</label><br />
+        <input
+          type="date"
+          id="birthday"
+          name="birthday"
+          max="2003-01-21"
+          required
+          placeholder="23-05-2005"
+        /><br />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <table class="dogs">
+      <thead>
+        <caption>
+          <h2>list of cute dogs</h2>
+        </caption>
+        <th>dogs</th>
+        <th>afador</th>
+        <th>akita</th>
+        <th>briard</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>weight</th>
+          <td>50 to 75 pounds</td>
+          <td>70 to 130 pounds</td>
+          <td>70 to 100 pounds</td>
+        </tr>
+        <tr>
+          <th>lise span</th>
+          <td>10 to 12 years</td>
+          <td>10 to 12 years</td>
+          <td>10 to 12 years</td>
+        </tr>
+        <tr>
+          <th>Dog Breed Group</th>
+          <td>Mixed Breed Dogs</td>
+          <td>Working Dogs</td>
+          <td>Herding Dogs</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>20 to 29 inches</td>
+          <td>2 feet to 2 feet, 4 inches tall at the shoulder</td>
+          <td>22 to 27 inches tall at the shoulder</td>
+        </tr>
+        <tr>
+          <th>websites</th>
+          <td class="website">
+            <img src="/images/afador.jpg" alt="cute afador" usemap="#afador" />
+          </td>
+          <td class="website">
+            <img src="/images/akita.jpg" alt="cute akita" usemap="#akita" />
+          </td>
+          <td class="website">
+            <img src="/images/briard.jpg" alt="cute briard" usemap="#briard" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <map name="afador">
+      <area
+        shape="default"
+        href="https://dogtime.com/dog-breeds/afador"
+        alt=""
+        target="_blank"
+      />
+    </map>
+    <map name="akita">
+      <area
+        shape="default"
+        href="https://dogtime.com/dog-breeds/akita#/slide/1"
+        alt=""
+        target="_blank"
+      /> </map
+    ><map name="briard">
+      <area
+        shape="default"
+        href="https://dogtime.com/dog-breeds/briard#/slide/1"
+        alt=""
+        target="_blank"
+      />
+    </map>
+  </body>
+</html>
