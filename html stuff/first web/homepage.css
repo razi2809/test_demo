@@ -1,0 +1,155 @@
+/*this is the header section*/
+/*some nav settings*/
+.top-bar {
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 80px;
+}
+.top-bar .pirate {
+  width: 70px;
+  float: left;
+}
+.r {
+  float: right;
+  width: 80px;
+}
+.top-bar h1 {
+  float: left;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+/*the general ul in the nav*/
+/*establish ground rules for ul*/
+.top-bar .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 360px;
+}
+.top-bar .navbar li:not(#blockli) {
+  float: left;
+}
+/*the links in the general ul*/
+.top-bar .navbar li a {
+  display: block;
+  padding-top: 30px;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  width: 150px;
+  height: 80px;
+  position: relative;
+  box-sizing: border-box;
+}
+/* choosen link will be in diffrent style*/
+.top-bar .navbar li a.active {
+  background-color: aqua;
+  color: black;
+}
+/*the litle arrow the side of the links*/
+.top-bar .navbar li a.active::after {
+  content: "";
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+/*what to do when hovering on the links in the navbar*/
+.top-bar .navbar li a:hover:not(.active) {
+  background-color: blueviolet;
+  color: rgb(219, 152, 52);
+}
+/*the end general ul in the nav*/
+
+/*this is the first dropdown list*/
+/*establish ground rules for ul of the first dropdown list*/
+#downlist {
+  list-style-type: none;
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+}
+/*establish ground rules for hidden first drop list*/
+.drop-down-content {
+  position: absolute;
+  list-style-type: none;
+  float: none;
+  z-index: 1;
+  display: none;
+}
+/*what to do when hovering on the item on the first dropdown list*/
+#downlist li:hover {
+  background-color: rgb(201, 171, 230);
+  color: rgb(255, 0, 0);
+}
+
+/*styles the list items*/
+.dropdown .drop-down-content li {
+  padding: 14px 16px;
+  text-align: center;
+  left: 125%;
+  background-color: aqua;
+  color: rgb(247, 0, 0);
+  width: 35px;
+}
+/*the litle arrow the side of the firs item of
+the first dropdownlist*/
+.dropdown .drop-down-content li#blockli.one:after {
+  content: "";
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+/*giving the dropdown list */
+#blockli {
+  position: relative;
+}
+/*shows the first drop down list when hovering
+ on the first link of the general ul in the nav*/
+.dropdown:hover .drop-down-content {
+  display: inline-block;
+} /*the end of the first dropdown list*/
+
+/*this is the second dropdown list*/
+/*establish ground rules for ul of the second dropdown list*/
+.downlist1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/*establish ground rules for hidden second drop list*/
+.dropdown-content {
+  position: absolute;
+  left: 101%;
+  top: 50%;
+  background-color: rgb(136, 255, 255);
+  z-index: 2;
+  text-align: center;
+  display: none;
+}
+/*shows the second drop down list when hovering
+ on the first item of the first dropdown list*/
+#blockli:hover .dropdown-content {
+  display: block;
+} /*the end of the second dropdown list*/
+
+#login {
+  float: right;
+  right: 120px;
+  position: absolute;
+} /*this is the end header section*/
