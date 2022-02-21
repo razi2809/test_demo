@@ -1,0 +1,113 @@
+.formreg {
+  position: relative;
+}
+.dogs > last {
+  border: none;
+}
+.formreg > label {
+  color: aqua;
+  background-color: brown;
+  border: solid 4px blue;
+  margin: 25px;
+}
+.formreg > input {
+  margin: 25px;
+}
+form :last-child {
+  position: relative;
+
+  left: 25px;
+  color: aqua;
+  background-color: black;
+}
+.website {
+  border: none;
+  border: white;
+}
+
+.container td:not(.img1) {
+  border: black solid 2px;
+  border-radius: 10px;
+  max-width: 150px;
+  z-index: 1;
+}
+.dogs th {
+  border: orchid dotted 2px;
+  text-decoration: underline red;
+  text-transform: capitalize;
+}
+.dogs caption {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.two {
+  width: 150px;
+  height: 150px;
+}
+ul.list a:active {
+  background-color: aqua;
+}
+.tree {
+  position: fixed;
+  top: 0px;
+  float: left;
+  overflow: auto;
+}
+.tree > img {
+  width: 200px;
+}
+ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  width: 500px;
+  position: relative;
+  top: 0px;
+  background-color: rgba(88, 49, 49, 0.3);
+  display: none;
+  overflow: auto;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  color: blueviolet;
+  background-color: rgba(114, 105, 70, 0.5);
+}
+li a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 100%;
+}
+.tree:hover > .list {
+  display: block;
+}
+body > .tree:hover {
+  margin-left: 55px;
+}
+.dropdown-content a:hover {
+  color: blueviolet;
+  background-color: rgba(114, 105, 70, 0.5);
+}

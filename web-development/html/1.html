@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <link rel="stylesheet" type="text/css" href="css/1.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" razi></a>
+          <a href="#" razi></a>
+          <a href="#" razi></a>
+          <a href="#" razi></a>
+          <a href="#" razi></a>
+          <a href="#" razi></a>
+        </li>
+      </ul>
+    </nav>
+    <h1>The input autofocus attribute</h1>
+    <a href="1.html">first page</a>
+    <p title="autofocus">
+      The autofocus attribute specifies that the input field should
+      automatically get focus when the page loads.
+    </p>
+    <form action="firspage.html" target="_blank">
+      <div class="formreg">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" required /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <label for="pass">password:</label><br />
+        <input type="password" id="pass" name="pass" autofocus /><br />
+        <label for="email">email:</label><br />
+        <input
+          type="email"
+          id="email1"
+          name="email1"
+          required
+          placeholder="sample@gmail.com"
+        /><br />
+        <label for="birthday">date of birth:</label><br />
+        <input
+          type="date"
+          id="birthday"
+          name="birthday"
+          max="2003-01-21"
+          required
+          placeholder="23-05-2005"
+        /><br />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <div class="container">
+      <table class="dogs">
+        <thead>
+          <caption>
+            <h2>list of cute dogs</h2>
+          </caption>
+          <th>dogs</th>
+          <th>afador</th>
+          <th>akita</th>
+          <th>briard</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>weight</th>
+            <td>50 to 75 pounds</td>
+            <td>70 to 130 pounds</td>
+            <td>70 to 100 pounds</td>
+          </tr>
+          <tr>
+            <th>lise span</th>
+            <td>10 to 12 years</td>
+            <td>10 to 12 years</td>
+            <td>10 to 12 years</td>
+          </tr>
+          <tr>
+            <th>Dog Breed Group</th>
+            <td>Mixed Breed Dogs</td>
+            <td>Working Dogs</td>
+            <td>Herding Dogs</td>
+          </tr>
+          <tr>
+            <th>Height</th>
+            <td>20 to 29 inches</td>
+            <td>2 feet to 2 feet, 4 inches tall at the shoulder</td>
+            <td>22 to 27 inches tall at the shoulder</td>
+          </tr>
+          <tr class="last">
+            <th>images</th>
+            <td class="img1">
+              <img class="two" src="/html/images/afador.jpg" alt="" />
+            </td>
+            <td class="img1">
+              <img class="two" src="/html/images/akita.jpg" alt="" />
+            </td>
+            <td class="img1">
+              <img class="two" src="/html/images/briard.jpg" alt="" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptates
+      magnam cupiditate dicta soluta autem deleniti saepe blanditiis pariatur?
+      Voluptas fugit, sed, debitis laboriosam atque facere maiores iusto vero
+      porro minus odit officiis, nihil aut dicta illo excepturi nemo laborum
+      repellendus optio ipsam dolore? Voluptates dignissimos cumque eum dolorum
+      reiciendis mollitia dolorem fugiat, commodi illum velit, molestiae laborum
+      debitis at doloremque, laboriosam tempore esse libero veritatis rerum
+      eaque a consectetur placeat. Quidem, nulla tenetur molestiae eum iste
+      aliquid. Incidunt suscipit dolor est optio, ipsum id. Perferendis veniam
+      assumenda sint aut omnis necessitatibus facere nobis ut impedit veritatis
+      ullam, quae magnam eum saepe laudantium corporis enim nesciunt? Facilis
+      veniam voluptate architecto pariatur asperiores possimus omnis, animi
+      dolores placeat debitis enim nemo. Cumque autem dolor reiciendis ex,
+      voluptates beatae. Eum mollitia, nihil adipisci quibusdam iusto ducimus
+      autem excepturi, ea itaque, nesciunt qui. Laboriosam numquam eligendi
+      facere maiores dolores culpa aperiam! Voluptas incidunt asperiores commodi
+      eveniet quae dolores deleniti, expedita, consectetur dolor, ex aliquam
+      ducimus itaque cum autem! Ut eaque, tempora eum quidem ipsa tempore,
+      perferendis ad excepturi veniam beatae tenetur suscipit itaque ab vero
+      rerum? Libero sit quaerat cupiditate doloremque nisi maxime, porro enim
+      est earum reiciendis nostrum quia, rerum dolor et?
+    </p>
+    <video width="400" controls autoplay>
+      <source src="/html/videos/mov_bbb.mp4" type="video/mp4" />
+
+      Your browser does not support HTML video.</video
+    ><br />
+    <audio controls autoplay>
+      <source src="/html/audio/horse.ogv" type="audio/ogg" />
+
+      Your browser does not support the audio element.
+    </audio>
+    <p>Click the button to get your coordinates.</p>
+    <p id="demo"></p>
+    <button onclick="test()">this is a test</button>
+    <button onclick="getLocation()">Try It</button>
+    <script>
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.accuracy;
+      }
+    </script>
+    <nav>
+      <div class="tree">
+        <img src="/html/images/side menu.png" alt="" />
+        <ul class="list">
+          <li><a class="active" href="#">home</a></li>
+          <li><a href="#">razi</a></li>
+          <li><a href="#">razi1</a></li>
+          <li><a href="#">razi2</a></li>
+          <li><a href="#">razi3</a></li>
+          <li class="dropdown">
+            <a class="dropbth" href="#">razi4</a>
+            <div class="dropdown-content">
+              <a href="#">razi5</a>
+              <a href="#">razi7</a>
+              <a href="#">razi8</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
